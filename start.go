@@ -1,14 +1,12 @@
 package main
 
 import (
-	"anibal/server/middlewares/serve"
+	ani "anibal/internal/server/middlewares/http"
 )
 
 func main() {
-	app := serve.Anibal()
-
-	app.Anibal()
+	ani.Server()
 	// Prints: http://localhost:4200
-	app.Anibal(serve.ToListen(80))
+	ani.Server(ani.ToListen(80))
 	// Prints: http://localhost:80
 }

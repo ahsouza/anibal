@@ -1,4 +1,4 @@
-package serve
+package ani
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ var StateDir = args.NewString(args.Flag("test.state.dir", "/tmp", "state dir"))
 //var RoundTripper = args.New(Default(http.DefaultTransport))
 //var Timeout = args.NewDuration(Flag("timeout", 10*time.Second, "timeout"))
 
-func Anibal(opts ...args.V) {
+func Server(opts ...args.V) {
 	port := ToListen.Get(opts)
 	//bufs := BufferSize.Get(opts)
 	//sdir := StateDir.Get(opts)
