@@ -54,5 +54,4 @@ func NewServer(opts ...args.V) {
 		g := gin.Default()
 		g.Run(port)
 	}
-
 }
