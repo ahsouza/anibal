@@ -1,7 +1,7 @@
 package main
 
 import (
-	ani "anibal/internal/server/middlewares/http"
+	ani "anibal/internal/application/protocols/http"
 )
 
 func main() {
